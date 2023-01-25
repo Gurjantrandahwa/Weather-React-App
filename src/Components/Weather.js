@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 
 const Weather = () => {
     const [city, setCity] = useState(null);
-    const [search, setSearch] = useState("Mumbai");
+    const [search, setSearch] = useState("Punjab");
     const [loading, setLoading] = useState(false)
     useEffect(() => {
         const fetchApi = () => {
@@ -51,8 +51,8 @@ const Weather = () => {
                         <div className="wave"/>
                         <div className="wave-two"/>
                         <div className="wave-three"/>
-                        <h2>{city && city.main && city.main.temp}Cel </h2>
-                        <h3> Max :{city.main.temp}Cel - Min :{city.main.temp}Cel</h3>
+                        <h2>{city && city.main && city.main.temp} Celsius </h2>
+                        <h3> Max :{city.main.temp}Cel - Min :{city.main.temp} Cel</h3>
                     </div>
                 </div>
             }
